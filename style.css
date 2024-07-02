@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilos del header y navegación */
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    display:flex;
+    justify-content:end;
+}
+
+.navigation li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.inicio {
+    text-align: center;
+    margin: 50px 50px;
+}
+
+.inicio h1 {
+    font-size: 3em;
+    color: 000000;
+    background-color: #878682;
+    padding:0%;
+    border-style:none;
+}
+
+.inicio h2 {
+    font-size: 2em;
+    color: #555;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Estilos de la sección About Me */
+.about-me {
+    margin: 30px 20px;
+    text-align: left;
+}
+
+.about-me h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align:left;
+}
+
+.about-me p {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Estilos de la sección Proyectos */
+.projects {
+    margin: 30px 30px;
+    text-align:left;
+    background-color: #C2C1AA;
+    grid-template-columns: auto;
+}
+
+.projects h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.projects article {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.projects h3 {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+.projects ul {
+    list-style:disc;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+/* Estilos de la sección Recomendaciones */
+.recommendations {
+    margin: 20px 20px;
+    text-align: left;
+}
+
+.recommendations h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.recommendations figure {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.recommendations img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.recommendations figcaption {
+    margin-top: 5px;
+}
+
+/* Estilos de la sección de contacto */
+.contact {
+    margin: 20px 0;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact label {
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #878682;
+    border-radius: 5px;
+    background-color: #C2C1AA;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Estilos del pie de página */
+footer {
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
