@@ -7,54 +7,77 @@
 */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: white;
-    color: #333;
+    margin: 20px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 header {
     background-color: white;
     color: black;
-    padding: 10px 10px;
-    text-align: center;
+    padding: 1em 0;
+    text-align: left;
 }
 
 .navigation {
     list-style: none;
-    display:flex;
-    justify-content:end;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
 }
 
 .navigation li {
-    margin: 0 15px;
-    cursor: pointer;
+    margin-right: 1em;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #ff6347;
 }
 
 .inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+ }
+
+.inicio-text {
     text-align: center;
-    margin: 50px 50px;
+    margin-right: 2em;
+}
+.inicio-text h1{
+    color:black;
 }
 
-.inicio h1 {
-    font-size: 3em;
-    color: 000000;
+.highlight {
     background-color: #878682;
-    padding:0%;
-    border-style:none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
 }
 
-.inicio h2 {
-    font-size: 2em;
-    color: #555;
-    text-align: center;
+.underline {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.inicio-image {
+    max-width: 150px;
+    max-height: 150px;
+    overflow:hidden;
+    border-radius:100%; 
 }
 
 .profile-image {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 10px;
+    height:150px;
 }
 
 .about-me {
@@ -102,30 +125,40 @@ header {
     padding: 30px;
 }
 
-.recommendations {
-    margin: 20px 20px;
-    text-align: left;
+.recommendations .recommendation-pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.recommendations h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.recommendations .top-recommendation {
+    margin-bottom: 2em;
+    text-align: center;
 }
 
-.recommendations figure {
-    display: inline-block;
-    margin: 10px 10px;
+.recommendations .bottom-recommendations {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
+
+.recommendations .recommendation-box {
+    background-color: #C2C1AA;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.recommendations .recommendation-box:hover {
+    transform: scale(1.05);
+}
+
 
 .recommendations img {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    height: auto;
     border-radius: 50%;
-    text-align:center;
-}
-
-.recommendations figcaption {
-    margin-top: 5px;
 }
 
 .contact {
