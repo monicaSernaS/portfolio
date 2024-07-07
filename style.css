@@ -1,9 +1,10 @@
+/*
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
-
+*/
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -120,7 +121,7 @@ header {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    text-align: center;
+    text-align:center;
 }
 
 .recommendations figcaption {
@@ -160,7 +161,7 @@ header {
     background-color: white;
     color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 0;
     cursor: pointer;
 }
 
