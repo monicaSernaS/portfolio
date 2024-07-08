@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header><!--el encabezado-->
+        <nav><!--navbar-->
+            <!--< ul class> permite agrupar contenido lógico en secciones separadas dentro del documento-->
             <ul class="navigation">
                 <li><a href="#">MS</a></li>
                 <li><a href="#">Home</a></li>
@@ -18,13 +19,12 @@
             </ul>
         </nav>
     </header>
-    
-    <main>
+    <main> <!--main, lo principal de la página-->
         <section class="inicio">
             <div class="inicio-text">
                 <h1 class="highlight">MÓNICA SERNA</h1>
                 <h2 class="underline">Portfolio</h2>
-            </div>
+            </div><!--división del contenido de la página-->
             <div class="inicio-image">
                 <img src="imagen_portfolio/sos_2.jpg" alt="Mónica Serna" class="profile-image">
             </div>
@@ -38,6 +38,7 @@
         <section class="projects">
             <h2>Proyectos</h2>
             <div class="project-grid">
+                <!--< article> parte de contenido independiente en una página web, como un artículo o  un elemento con información propia.-->
                 <article>
                     <h3>Desarrolladora Full Stack</h3>
                     <ul>
@@ -72,9 +73,9 @@
         <section class="recommendations">
             <h2>Recomendaciones</h2>
             <div class="recommendation-pyramid">
-                <figure class="recommendation-box">
+                <figure class="recommendation-box"><!--agrega contenido de imágenes asociadas a la clase-->
                     <img src="https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_1280.png" alt="Omar Lengua">
-                    <figcaption>Omar Lengua</figcaption>
+                    <figcaption>Omar Lengua</figcaption><!--"leyenda"-->
                     <figcaption>Full Stack Developer</figcaption>
                 </figure>
                 <div class="bottom-recommendations">
@@ -94,7 +95,7 @@
 
         <section class="contact">
             <h2>¡Conectémos!</h2>
-            <form action="mailto:monicut3@gmail.com" method="post" enctype="text/plain">
+            <form action="mailto:monicut3@gmail.com" method="post" enctype="text/plain"><!--se enviará info a esta página, en txt sin codificar-->
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name">
                 <label for="email">Correo:</label>
